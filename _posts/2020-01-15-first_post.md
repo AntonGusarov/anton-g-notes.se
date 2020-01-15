@@ -9,6 +9,11 @@ date: 2020-01-15
 Resulting correction ![equation](https://latex.codecogs.com/gif.latex?x_i%5E%7Ba%7D) can be expressed as a weighted linear combination 
 of the differences between observed and modeled time series 
 ![equation](https://latex.codecogs.com/png.latex?%5CDelta_n%28%5Ctau%29%20%3D%20y_n%5E%7Bo%7D%28%5Ctau%29-Hx_n%5E%7Bb%7D%28%5Ctau%29) 
+
+![equation](https://latex.codecogs.com/png.latex?%5CDelta_n%28%5Ctau%29%20%3D%20y_n%5E%7Bo%7D%28%5Ctau%29-Hx_n%5E%7Bb%7D%28%5Ctau%29) 
+
+$$x_i^{a}(t) = x_i^{b}(t) + \sum_{n=1}^{N} \sum_{\tau=t-T}^{t+T} w_n^{(i,t)}(\tau)\Delta_n(\tau)$$
+
 added then to each grid point of the modeled (background) field ![equation](https://latex.codecogs.com/png.latex?x_i%5E%7Bb%7D):
 
 ![equation](https://latex.codecogs.com/png.latex?x_i%5E%7Ba%7D%28t%29%20%3D%20x_i%5E%7Bb%7D%28t%29%20&plus;%20%5Csum_%7Bn%3D1%7D%5E%7BN%7D%20%5Csum_%7B%5Ctau%3Dt-T%7D%5E%7Bt&plus;T%7D%20w_n%5E%7B%28i%2Ct%29%7D%28%5Ctau%29%5CDelta_n%28%5Ctau%29)
