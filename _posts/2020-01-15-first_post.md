@@ -4,7 +4,7 @@ title: "Metrics in linear regression"
 date: 2020-01-15
 ---
 
-# 1. Optimal interpolation
+## <span style="color:blue"> 1. Optimal interpolation </span>
 
 Resulting correction ![equation](https://latex.codecogs.com/gif.latex?x_i%5E%7Ba%7D) can be expressed as a weighted linear combination 
 of the differences between observed and modeled time series 
