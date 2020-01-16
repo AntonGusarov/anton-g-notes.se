@@ -1,0 +1,6 @@
+I"Ì<h2 id="1-optimal-interpolation">1. Optimal interpolation</h2>
+
+<p>Lorem ipsum \(x^2_{i}\) :</p>
+
+<p>\[x_i^{a}(t) = x_i^{b}(t) + \sum_{n=1}^{N} \sum_{\tau=t-T}^{t+T} w_n^{(i,t)}(\tau)\Delta_n(\tau)\]</p>
+:ET
