@@ -1,0 +1,22 @@
+I"�
+<p>Any computational model – no matter if this is the machine learning model or numerical solution of differential equations – must go through the <strong>validation</strong> procedure. It is needed to determine the extent to which model’s outcomes fit the real process and determine the range of validity of the model and its capability to reproduce a physical process of interest with an acceptable accuracy.</p>
+
+<p>In [1], seven properties are proposed validation metrics ideally should have. These properties form a general framework for the development of new metrics depending on the subject area and modeling goals. In particular, any metric must possess the metric properties in the mathematical sense as a measure of the residual: 
+\[d(x, y) \geq 0 \]
+\[d(x, y)=d(y, x)\]
+\[d(x, y)+d(y, z) \geq d(x, z)\]
+\[d(x, y)=0 \Leftrightarrow x=y\]</p>
+
+<p>This post reviews the most common error measures and metrics, discusses their benefits and limitations. Having a set of error measures at hand, the next step in the development of validation metrics is to use them to evaluate the predictive (descriptive) ability of the model in the presence of <strong>experimental uncertainties</strong>. The Bayesian approach described in can be used for these purposes [2].</p>
+
+<p>This post describes some of the measures and metrics evaluating the deviation of modelled time-series from an experimental sample. In this context, a distinction is made between the concepts of “measure of error” and “metric of error”. A measure of error is a numerical value associated with a difference with respect to a particular property of the compared time series. The error metric is a generalized numerical characteristic of the inconsistency of the compared time series and can be of a single error measure or their combination. Often, single measure of error does not give a complete description of the difference between time series in order to be used as a metric.</p>
+
+<h1 id="1-vector-norms">1. Vector norms</h1>
+
+<p>In cases  where observations and simulation results are discrete, i.e. have a finite dimension, vector norms are the frequently used measures.
+Let \(S\left(x_{i}\right)\) means the modelling outcome as a function of some parameter \(x_i\) (e.g. time in dynamic systems) and \(\mathcal{E}\left(x_{i}\right)\) are the corresponding experimental observations.</p>
+
+<p>Vector norms such as \(L_1\) – <strong>Manhattan distance</strong>, \(\ L_2\) – <strong>Euclidean distance</strong>, or  \(L_{\inf}\) can be used under condition that vectors \(S\left(x_{i}\right)\) and \(\mathcal{E}\left(x_{i}\right)\) have the same dimensionaliny \(N\)</p>
+
+<p>\[S - E_{p}= \]</p>
+:ET
