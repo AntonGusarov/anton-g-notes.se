@@ -1,8 +1,0 @@
-I"«<h2 id="-1-optimal-interpolation-"><span style="color:blue"> 1. Optimal interpolation </span></h2>
-
-<p>Resulting correction <img src="https://latex.codecogs.com/gif.latex?x_i%5E%7Ba%7D" alt="equation" /> can be expressed as a weighted linear combination 
-of the differences between observed and modeled time series</p>
-
-<p>\[x_i^{a}(t) = x_i^{b}(t) + \sum_{n=1}^{N} \sum_{\tau=t-T}^{t+T} w_n^{(i,t)}(\tau)\Delta_n(\tau)\]</p>
-
-:ET
