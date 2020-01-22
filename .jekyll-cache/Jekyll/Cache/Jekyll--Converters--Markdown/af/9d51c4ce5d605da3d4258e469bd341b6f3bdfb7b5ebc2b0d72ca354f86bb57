@@ -1,0 +1,30 @@
+I"<p>Today consider the standard concepts in machine learning: <strong>overfitting</strong> and <strong>underfitting</strong>, its relation to the <strong>model complexity</strong> that are all integrated in the <strong>bias-variace tradeoff</strong>. Also, I will provide the <em>full</em> derivation of the bias-varince tradeoff formula which is often ignored in the literature and usually shown reduced just up to the final result.</p>
+
+<p>The first is  <a href="https://en.wikipedia.org/wiki/Overfitting"><strong>overfitting</strong></a> – phenomenon when the performance on the test sample is noticeably worse than the that on the train sample. This is the major problem of machine learning: if there was no such an effect i.e. the error on the test almost coincided with the error on the training, then all the training would be just reduced to minimizing the error on the test data (so-called <a href="https://en.wikipedia.org/wiki/Empirical_risk_minimization">empirical risk minimization</a>) which doesn’t apparently happen.</p>
+
+<p>The second is  <a href="https://en.wikipedia.org/wiki/Overfitting"><strong>underfitting</strong></a> – phenomenon where the error in the training sample is excessively large. Such a situation might be explained by the fact that underfitting can be observed  during the training process often when too few iterations of the train algorithm (e.g. back propagation) has been made i.e. “we did not have time to learn.”</p>
+
+<p>Third, <strong>model complexity</strong> describes how various is the ensemble of algorithms in the model class in terms of their functional properties (for example, the ability to fit the train samples). Increasing complexity (i.e. employing more complex models) solves the problem of underfitting but causes overfitting.</p>
+
+<p>Now demonstrate with how the problem of complexity choice manifests itself and how appears the overfitting. To begin with, consider the <strong>polynomial regression</strong>. For simplicity, assume that this is a regression on a single covariate \(x\). The target \(y\) is known in a finite set of points. In figure below is shown approximations of the target but noisy functional dependency \(y=f(x)\) by the polynomial regression model of different orders:</p>
+
+<p><img src="\post_2_fig_1.png" style="float: center; margin-left: 270px; width:60%" class="row" /></p>
+
+<p>It can be seen that the polynomial of the order 1 is clearly not suitable for describing the target dependence – clear <strong>underfitting</strong>. The model of order 2 describes it better, although there is a substantial errors on the training sample. With orders 3-5 we have even better fit with a smooth curve. The extreme model of order 20, does not at all look like a “natural function” and deviates significantly from the target dependence with too much following the noise in train data and thus affecting its validation score – <strong>overfitted model</strong>.</p>
+
+<p>If to plot the MSE performance of a similar polynomial model vs the model complexity, we can notice that with an increase in the order, the error in the training sample always decreases. While on the test sample it first falls then increases, indicating the optimal point of model complexity where bias-variance tradeoff is (which is not always the case though).</p>
+
+<p><img src="\post_2_fig_2.jpg" style="float: center; margin-left: 270px; width:45%" class="row" /></p>
+
+<p>Let us now figure out what is going out from the theoretical viewpoint.</p>
+
+<p>Say that exist some true \textit{deterministic} function that we want to approximate with our ML model
+\[
+f=f(\mathbf{x})
+\]</p>
+
+<p>Although, we cannot observe outcomes of this unknown function directly but with some additive stochastic component, say being centered \(\operatorname{E} { \varepsilon } = 0\):
+\[
+t = f + \varepsilon
+\]</p>
+:ET

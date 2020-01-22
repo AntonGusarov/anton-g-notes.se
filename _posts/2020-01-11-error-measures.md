@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Error measures and metrics for time series data"
+title: "Error measures for time series with examples from meteorology"
 date: 2020-01-11
 ---
 
