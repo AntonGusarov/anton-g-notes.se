@@ -1,7 +1,0 @@
-I"0<p>Today consider the standard concepts in machine learning: <strong>overfitting</strong> and <strong>underfitting</strong>, its relation to the <strong>model complexity</strong> that are all integrated in the <strong>bias-variace tradeoff</strong>. Also, I will give the ** <em>full</em> ** derivation of the bias-varince tradeoff formula which is often ignored in the literature and usually shown reduced just up to the final result.</p>
-
-<p>The first is  <a href="https://en.wikipedia.org/wiki/Overfitting"><strong>overfitting</strong></a> – phenomenon when the performance on the test sample is noticeably worse than the that on the train sample. This is the major problem of machine learning: if there was no such an effect i.e. the error on the test almost coincided with the error on the training, then all the training would be just reduced to minimizing the error on the test data (so-called <a href="https://en.wikipedia.org/wiki/Empirical_risk_minimization">empirical risk minimization</a>) which doesn’t apparently happen.</p>
-
-<p>\[d(x, y) \geq 0 \]</p>
-
-:ET
