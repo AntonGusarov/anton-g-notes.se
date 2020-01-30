@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2bad571cc54f48768439e776aefd464d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2bad571cc54f48768439e776aefd464d" ></div>
+        
+</body>
+<script>    
+    
+            var map_2bad571cc54f48768439e776aefd464d = L.map(
+                "map_2bad571cc54f48768439e776aefd464d",
+                {
+                    center: [34.0, 115.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4.6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    title: "nCov 2019",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24ba0dda502f4b32a1bb0cf7aa552f48 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var circle_4d50f6190e694af3973ed62af722684b = L.circle(
+                [31.0, 112.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42153.817317089255, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_ef21bf9b69b549b485c2fe8094ed7f11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4eca70d16ae8427d8e7ee750ff23e059 = $(`<div id="html_4eca70d16ae8427d8e7ee750ff23e059" style="width: 100.0%; height: 100.0%;">Hubei:  4586 infected,   162 deaths</div>`)[0];
+            popup_ef21bf9b69b549b485c2fe8094ed7f11.setContent(html_4eca70d16ae8427d8e7ee750ff23e059);
+        
+
+        circle_4d50f6190e694af3973ed62af722684b.bindPopup(popup_ef21bf9b69b549b485c2fe8094ed7f11)
+        ;
+
+        
+    
+    
+            var marker_a22eee5da5bd444f9730c88fb2d012ee = L.marker(
+                [30.74, 112.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_fb95169074624e5da2e7608c549bd053 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e4586\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_a22eee5da5bd444f9730c88fb2d012ee.setIcon(div_icon_fb95169074624e5da2e7608c549bd053);
+        
+    
+            var circle_94a778d7a9424b1fb414eb66924b4f7e = L.circle(
+                [29.0, 120.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30295.615977908983, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_f3b3cbd5a13c4f1d876df34d87c174a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_406678c0e96e428eba6b2588fa7b67bb = $(`<div id="html_406678c0e96e428eba6b2588fa7b67bb" style="width: 100.0%; height: 100.0%;">Zhejiang:  428 infected,   0 deaths</div>`)[0];
+            popup_f3b3cbd5a13c4f1d876df34d87c174a9.setContent(html_406678c0e96e428eba6b2588fa7b67bb);
+        
+
+        circle_94a778d7a9424b1fb414eb66924b4f7e.bindPopup(popup_f3b3cbd5a13c4f1d876df34d87c174a9)
+        ;
+
+        
+    
+    
+            var marker_8dfffd6db00e4050a7770a3c8850a450 = L.marker(
+                [28.74, 120.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_983fbbc305b64bd0882a3ac141f25803 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e428\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_8dfffd6db00e4050a7770a3c8850a450.setIcon(div_icon_983fbbc305b64bd0882a3ac141f25803);
+        
+    
+            var circle_58fe681e6ac44c39a6a41683dfaffd02 = L.circle(
+                [23.0, 113.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29346.48456566887, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_89b7c9a8cd1f4e74bb38bd251e4245c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bda5b80322848059593392c09ce4b71 = $(`<div id="html_5bda5b80322848059593392c09ce4b71" style="width: 100.0%; height: 100.0%;">Guangdong:  354 infected,   0 deaths</div>`)[0];
+            popup_89b7c9a8cd1f4e74bb38bd251e4245c9.setContent(html_5bda5b80322848059593392c09ce4b71);
+        
+
+        circle_58fe681e6ac44c39a6a41683dfaffd02.bindPopup(popup_89b7c9a8cd1f4e74bb38bd251e4245c9)
+        ;
+
+        
+    
+    
+            var marker_ead9528a95644167aca6b9028ebbce4f = L.marker(
+                [22.74, 113.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_314481f00b274c32b86890855bb898b1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e354\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_ead9528a95644167aca6b9028ebbce4f.setIcon(div_icon_314481f00b274c32b86890855bb898b1);
+        
+    
+            var circle_65e15a149ceb44b4b4632abdcda431df = L.circle(
+                [34.0, 113.7],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28138.105568453186, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_2af3d99e581a421c8fe5bf6dbac84dcd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a9be8ddb40243078e763e64f901a584 = $(`<div id="html_8a9be8ddb40243078e763e64f901a584" style="width: 100.0%; height: 100.0%;">Henan:  278 infected,   2 deaths</div>`)[0];
+            popup_2af3d99e581a421c8fe5bf6dbac84dcd.setContent(html_8a9be8ddb40243078e763e64f901a584);
+        
+
+        circle_65e15a149ceb44b4b4632abdcda431df.bindPopup(popup_2af3d99e581a421c8fe5bf6dbac84dcd)
+        ;
+
+        
+    
+    
+            var marker_d3fc69671c894d7fa18793ef2acec83b = L.marker(
+                [33.74, 113.7],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_1e1986f89c914ca9a25a9bc199807277 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e278\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_d3fc69671c894d7fa18793ef2acec83b.setIcon(div_icon_1e1986f89c914ca9a25a9bc199807277);
+        
+    
+            var circle_50ba5ac08f1c4cbab20294ddeef01bc0 = L.circle(
+                [27.6, 111.6],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28120.087530936693, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_0f69b9bcc5d044719c7164c12d82bb28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f0633acf78b4e3ea1d830c455ebfc7d = $(`<div id="html_9f0633acf78b4e3ea1d830c455ebfc7d" style="width: 100.0%; height: 100.0%;">Hunan:  277 infected,   0 deaths</div>`)[0];
+            popup_0f69b9bcc5d044719c7164c12d82bb28.setContent(html_9f0633acf78b4e3ea1d830c455ebfc7d);
+        
+
+        circle_50ba5ac08f1c4cbab20294ddeef01bc0.bindPopup(popup_0f69b9bcc5d044719c7164c12d82bb28)
+        ;
+
+        
+    
+    
+            var marker_a71aec423b304441a91b65bfc6c4a332 = L.marker(
+                [27.34, 111.6],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_ab6abe985a734b65b88aa8846cf1e386 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e277\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_a71aec423b304441a91b65bfc6c4a332.setIcon(div_icon_ab6abe985a734b65b88aa8846cf1e386);
+        
+    
+            var circle_36a69e0be0df4ac2816388838a974eb6 = L.circle(
+                [31.7, 117.3],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26491.58683274018, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_1bbf7a17f67d43ef8866f80c468a8a96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2277a14b3e734bec94e95ae59981067a = $(`<div id="html_2277a14b3e734bec94e95ae59981067a" style="width: 100.0%; height: 100.0%;">Anhui:  200 infected,   0 deaths</div>`)[0];
+            popup_1bbf7a17f67d43ef8866f80c468a8a96.setContent(html_2277a14b3e734bec94e95ae59981067a);
+        
+
+        circle_36a69e0be0df4ac2816388838a974eb6.bindPopup(popup_1bbf7a17f67d43ef8866f80c468a8a96)
+        ;
+
+        
+    
+    
+            var marker_af6b163feb2a448da7f21c0dfd39b254 = L.marker(
+                [31.439999999999998, 117.3],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_63e22e27c982458e8d6e7d172b1d70dd = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e200\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_af6b163feb2a448da7f21c0dfd39b254.setIcon(div_icon_63e22e27c982458e8d6e7d172b1d70dd);
+        
+    
+            var circle_e3169deed41f48b48fb0d0ba20161d35 = L.circle(
+                [29.5, 107.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26020.033435383975, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_c4817be71c394078b95ad1b0cfb954c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4672bff9a9644904a8e948e54ddea93e = $(`<div id="html_4672bff9a9644904a8e948e54ddea93e" style="width: 100.0%; height: 100.0%;">Chongqing:  182 infected,   0 deaths</div>`)[0];
+            popup_c4817be71c394078b95ad1b0cfb954c3.setContent(html_4672bff9a9644904a8e948e54ddea93e);
+        
+
+        circle_e3169deed41f48b48fb0d0ba20161d35.bindPopup(popup_c4817be71c394078b95ad1b0cfb954c3)
+        ;
+
+        
+    
+    
+            var marker_04bec61afca94c169d25074709a6a1c9 = L.marker(
+                [29.24, 107.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_c22bc43ed749438099f04ba1f524ba4e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e182\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_04bec61afca94c169d25074709a6a1c9.setIcon(div_icon_c22bc43ed749438099f04ba1f524ba4e);
+        
+    
+            var circle_19de20090a4b42d29099d7c7f38e584a = L.circle(
+                [27.4, 115.6],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25437.98167616192, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_8007c24270a04dd2bd21c7dbb90e1fe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d73b58f744ec439285a9d17e9344934b = $(`<div id="html_d73b58f744ec439285a9d17e9344934b" style="width: 100.0%; height: 100.0%;">Jiangxi:  162 infected,   0 deaths</div>`)[0];
+            popup_8007c24270a04dd2bd21c7dbb90e1fe7.setContent(html_d73b58f744ec439285a9d17e9344934b);
+        
+
+        circle_19de20090a4b42d29099d7c7f38e584a.bindPopup(popup_8007c24270a04dd2bd21c7dbb90e1fe7)
+        ;
+
+        
+    
+    
+            var marker_6ed87f588217448d81f3127894f63b0b = L.marker(
+                [27.139999999999997, 115.6],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_0d248cb7297245448dc6f4c21728c7a1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e162\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_6ed87f588217448d81f3127894f63b0b.setIcon(div_icon_0d248cb7297245448dc6f4c21728c7a1);
+        
+    
+            var circle_b4e85b02ff4340a28aa33b6e844001f8 = L.circle(
+                [36.2, 118.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25312.975165134834, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_c223907ee35c410c931461bdd9558139 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fc5ee0e3a23445fbdfb4c1531a628d5 = $(`<div id="html_9fc5ee0e3a23445fbdfb4c1531a628d5" style="width: 100.0%; height: 100.0%;">Shandong:  158 infected,   0 deaths</div>`)[0];
+            popup_c223907ee35c410c931461bdd9558139.setContent(html_9fc5ee0e3a23445fbdfb4c1531a628d5);
+        
+
+        circle_b4e85b02ff4340a28aa33b6e844001f8.bindPopup(popup_c223907ee35c410c931461bdd9558139)
+        ;
+
+        
+    
+    
+            var marker_49df3a5f6c10458096f92e82aa0d2c6d = L.marker(
+                [35.940000000000005, 118.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_71d0a565c73b4e1b81f8a7a762eecc64 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e158\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_49df3a5f6c10458096f92e82aa0d2c6d.setIcon(div_icon_71d0a565c73b4e1b81f8a7a762eecc64);
+        
+    
+            var circle_95d8e04b1cfe4c808c1454253a4ea8e3 = L.circle(
+                [30.5, 104.2],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24779.135288006306, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_ac342185ab0943eebdc145c02f64eedc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6af03fb11b334996a11ed3becfd8b48e = $(`<div id="html_6af03fb11b334996a11ed3becfd8b48e" style="width: 100.0%; height: 100.0%;">Sichuan:  142 infected,   1 deaths</div>`)[0];
+            popup_ac342185ab0943eebdc145c02f64eedc.setContent(html_6af03fb11b334996a11ed3becfd8b48e);
+        
+
+        circle_95d8e04b1cfe4c808c1454253a4ea8e3.bindPopup(popup_ac342185ab0943eebdc145c02f64eedc)
+        ;
+
+        
+    
+    
+            var marker_27489e3ec6a9400aa2c14569ee5b0c40 = L.marker(
+                [30.24, 104.2],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_860560175890461f8b11b21cba33270b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e142\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_27489e3ec6a9400aa2c14569ee5b0c40.setIcon(div_icon_860560175890461f8b11b21cba33270b);
+        
+    
+            var circle_65df8b1010a84cb5a0d185b1c1ca117c = L.circle(
+                [32.3, 120.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24299.06202180836, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_5e2872c7827e45a4b0e52674772ac41c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b5e9f7434434b3a9bc5b35106618dc5 = $(`<div id="html_1b5e9f7434434b3a9bc5b35106618dc5" style="width: 100.0%; height: 100.0%;">Jiangsu:  129 infected,   0 deaths</div>`)[0];
+            popup_5e2872c7827e45a4b0e52674772ac41c.setContent(html_1b5e9f7434434b3a9bc5b35106618dc5);
+        
+
+        circle_65df8b1010a84cb5a0d185b1c1ca117c.bindPopup(popup_5e2872c7827e45a4b0e52674772ac41c)
+        ;
+
+        
+    
+    
+            var marker_e6e5ef8dcacf48669aecfc39247decd7 = L.marker(
+                [32.04, 120.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_9695a87c86824ed9a2d24ec09fd35745 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e129\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_e6e5ef8dcacf48669aecfc39247decd7.setIcon(div_icon_9695a87c86824ed9a2d24ec09fd35745);
+        
+    
+            var circle_d99c5e9c2993450f8d7752f5c315d1d4 = L.circle(
+                [39.9, 116.4],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23680.99224197248, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_d2882c6112714618ab8fe6982fcd815d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e218a45df75b4e8aac9cfe1e6a0ffe61 = $(`<div id="html_e218a45df75b4e8aac9cfe1e6a0ffe61" style="width: 100.0%; height: 100.0%;">Beijing:  114 infected,   1 deaths</div>`)[0];
+            popup_d2882c6112714618ab8fe6982fcd815d.setContent(html_e218a45df75b4e8aac9cfe1e6a0ffe61);
+        
+
+        circle_d99c5e9c2993450f8d7752f5c315d1d4.bindPopup(popup_d2882c6112714618ab8fe6982fcd815d)
+        ;
+
+        
+    
+    
+            var marker_aacc6f73d1d743ee874375b5329e9a50 = L.marker(
+                [39.64, 116.4],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_4bc2374c7c5f4de09711639b022e11af = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e114\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_aacc6f73d1d743ee874375b5329e9a50.setIcon(div_icon_4bc2374c7c5f4de09711639b022e11af);
+        
+    
+            var circle_9289d605fce34e0eb6a38d62a10cf1d1 = L.circle(
+                [31.0, 121.39],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23592.494356475472, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_0b1182a6a3a14627abc6bd28117773f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13f3bf44a72d4477815a33ecf478e879 = $(`<div id="html_13f3bf44a72d4477815a33ecf478e879" style="width: 100.0%; height: 100.0%;">Shanghai:  112 infected,   1 deaths</div>`)[0];
+            popup_0b1182a6a3a14627abc6bd28117773f7.setContent(html_13f3bf44a72d4477815a33ecf478e879);
+        
+
+        circle_9289d605fce34e0eb6a38d62a10cf1d1.bindPopup(popup_0b1182a6a3a14627abc6bd28117773f7)
+        ;
+
+        
+    
+    
+            var marker_a2bd1e3d27704e6fb85450a39ee7f05e = L.marker(
+                [30.74, 121.39],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_4612a2ec5c6748d78ec010e334dcddd3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e112\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_a2bd1e3d27704e6fb85450a39ee7f05e.setIcon(div_icon_4612a2ec5c6748d78ec010e334dcddd3);
+        
+    
+            var circle_86753e7702e548be8e9e27b9666f2725 = L.circle(
+                [25.9, 117.7],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23075.6025842063, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_0b44672c8d32419994226d06b1bdb79b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28926d212dfa436a9c75f58f7f3d373e = $(`<div id="html_28926d212dfa436a9c75f58f7f3d373e" style="width: 100.0%; height: 100.0%;">Fujian:  101 infected,   0 deaths</div>`)[0];
+            popup_0b44672c8d32419994226d06b1bdb79b.setContent(html_28926d212dfa436a9c75f58f7f3d373e);
+        
+
+        circle_86753e7702e548be8e9e27b9666f2725.bindPopup(popup_0b44672c8d32419994226d06b1bdb79b)
+        ;
+
+        
+    
+    
+            var marker_71d44a917da04a19abe3977b0af38061 = L.marker(
+                [25.639999999999997, 117.7],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_78e059cf4c0f492188e90c138539db7c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e101\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_71d44a917da04a19abe3977b0af38061.setIcon(div_icon_78e059cf4c0f492188e90c138539db7c);
+        
+    
+            var circle_2ad7e8c3e15e4c6abbc2f5da35f5e6ce = L.circle(
+                [23.36, 108.9],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21783.54413344796, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_cd50124c2ed6401b9b875b1d4acf8aeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46d6832fb74e400e919d4da214c233b6 = $(`<div id="html_46d6832fb74e400e919d4da214c233b6" style="width: 100.0%; height: 100.0%;">Guangxi:  78 infected,   0 deaths</div>`)[0];
+            popup_cd50124c2ed6401b9b875b1d4acf8aeb.setContent(html_46d6832fb74e400e919d4da214c233b6);
+        
+
+        circle_2ad7e8c3e15e4c6abbc2f5da35f5e6ce.bindPopup(popup_cd50124c2ed6401b9b875b1d4acf8aeb)
+        ;
+
+        
+    
+    
+            var marker_f9ba5ec214a64ce4a1cc4b5f63ba0676 = L.marker(
+                [23.099999999999998, 108.9],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_9ba85d63a7ec4704a9d17ec3bcfa69f1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e78\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_f9ba5ec214a64ce4a1cc4b5f63ba0676.setIcon(div_icon_9ba85d63a7ec4704a9d17ec3bcfa69f1);
+        
+    
+            var circle_8e5ca441aac349e1b5a0c2ef1e1aa270 = L.circle(
+                [24.7, 102.8],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21242.476210246798, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_e74b55ce05e643b1b8c1101bf5db6616 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a286e9e15bd245fb8517563952163f5c = $(`<div id="html_a286e9e15bd245fb8517563952163f5c" style="width: 100.0%; height: 100.0%;">Yunnan:  70 infected,   0 deaths</div>`)[0];
+            popup_e74b55ce05e643b1b8c1101bf5db6616.setContent(html_a286e9e15bd245fb8517563952163f5c);
+        
+
+        circle_8e5ca441aac349e1b5a0c2ef1e1aa270.bindPopup(popup_e74b55ce05e643b1b8c1101bf5db6616)
+        ;
+
+        
+    
+    
+            var marker_2b15f9897e364d2084a3448800540bd9 = L.marker(
+                [24.439999999999998, 102.8],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_f97c9deddaa04879801bbae98f87c08e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e70\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_2b15f9897e364d2084a3448800540bd9.setIcon(div_icon_f97c9deddaa04879801bbae98f87c08e);
+        
+    
+            var circle_ef22ecae770145aebd3bf2b51839e577 = L.circle(
+                [38.0, 115.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20871.936349478183, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_0094b18c5ea943be865aeeee85ba38f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8760b40c122642d4bd03b26fa828ab20 = $(`<div id="html_8760b40c122642d4bd03b26fa828ab20" style="width: 100.0%; height: 100.0%;">Hebei:  65 infected,   1 deaths</div>`)[0];
+            popup_0094b18c5ea943be865aeeee85ba38f4.setContent(html_8760b40c122642d4bd03b26fa828ab20);
+        
+
+        circle_ef22ecae770145aebd3bf2b51839e577.bindPopup(popup_0094b18c5ea943be865aeeee85ba38f4)
+        ;
+
+        
+    
+    
+            var marker_f5c150762cb641d78b67a5b749256b2a = L.marker(
+                [37.74, 115.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_9eae4ee4ea4549c4b2ddc41ade670b66 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e65\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_f5c150762cb641d78b67a5b749256b2a.setIcon(div_icon_9eae4ee4ea4549c4b2ddc41ade670b66);
+        
+    
+            var circle_efabf1bc18ab4b788eb19cbd99b943c1 = L.circle(
+                [34.2, 109.0],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20715.673631957663, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_1a28b8b2a6d14c9394b5d132428ab70d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a19f68bc8b90430cbda51a1044b6d965 = $(`<div id="html_a19f68bc8b90430cbda51a1044b6d965" style="width: 100.0%; height: 100.0%;">Shaanxi:  63 infected,   0 deaths</div>`)[0];
+            popup_1a28b8b2a6d14c9394b5d132428ab70d.setContent(html_a19f68bc8b90430cbda51a1044b6d965);
+        
+
+        circle_efabf1bc18ab4b788eb19cbd99b943c1.bindPopup(popup_1a28b8b2a6d14c9394b5d132428ab70d)
+        ;
+
+        
+    
+    
+            var marker_f79195e47a3149e1a4dc127fac86ef1e = L.marker(
+                [33.940000000000005, 109.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_33cb674965d1437dac0b7c5ccde513b3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e63\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_f79195e47a3149e1a4dc127fac86ef1e.setIcon(div_icon_33cb674965d1437dac0b7c5ccde513b3);
+        
+    
+            var circle_ae00e0c3464947dba0cd66be0240e1ef = L.circle(
+                [19.1, 109.6],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19143.206982445474, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_1938d866367148a39cd18a5b45a3a518 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acd7d2008fd24601b0a1295617c51f98 = $(`<div id="html_acd7d2008fd24601b0a1295617c51f98" style="width: 100.0%; height: 100.0%;">Hainan:  46 infected,   1 deaths</div>`)[0];
+            popup_1938d866367148a39cd18a5b45a3a518.setContent(html_acd7d2008fd24601b0a1295617c51f98);
+        
+
+        circle_ae00e0c3464947dba0cd66be0240e1ef.bindPopup(popup_1938d866367148a39cd18a5b45a3a518)
+        ;
+
+        
+    
+    
+            var marker_3d85dccff29d4a99b8623a699b6c2a29 = L.marker(
+                [18.84, 109.6],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_201139e2eb2d46a7b49ed8745a343171 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e46\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_3d85dccff29d4a99b8623a699b6c2a29.setIcon(div_icon_201139e2eb2d46a7b49ed8745a343171);
+        
+    
+            var circle_85d1156b375e4f0c87dab8b25d00681a = L.circle(
+                [46.9, 128.6],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18806.00057846781, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_badb52ac9e0948edb6ae79cc93051994 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55a84625b86a414c9e6f7c25f025794b = $(`<div id="html_55a84625b86a414c9e6f7c25f025794b" style="width: 100.0%; height: 100.0%;">Heilongjiang:  43 infected,   1 deaths</div>`)[0];
+            popup_badb52ac9e0948edb6ae79cc93051994.setContent(html_55a84625b86a414c9e6f7c25f025794b);
+        
+
+        circle_85d1156b375e4f0c87dab8b25d00681a.bindPopup(popup_badb52ac9e0948edb6ae79cc93051994)
+        ;
+
+        
+    
+    
+            var marker_fe68cea162c942d38dd51b1ae00eacd8 = L.marker(
+                [46.64, 128.6],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_140d74337119461682bc1845c6fc132c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e43\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_fe68cea162c942d38dd51b1ae00eacd8.setIcon(div_icon_140d74337119461682bc1845c6fc132c);
+        
+    
+            var circle_8b700038b3c64e5a92d9237e144317d8 = L.circle(
+                [41.7, 123.3],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18567.86033352154, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_b04dea6f70824ce582bfe041e18e44fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e838a0442384ab2a3d42bec5b3bd6f1 = $(`<div id="html_3e838a0442384ab2a3d42bec5b3bd6f1" style="width: 100.0%; height: 100.0%;">Liaoning:  41 infected,   0 deaths</div>`)[0];
+            popup_b04dea6f70824ce582bfe041e18e44fd.setContent(html_3e838a0442384ab2a3d42bec5b3bd6f1);
+        
+
+        circle_8b700038b3c64e5a92d9237e144317d8.bindPopup(popup_b04dea6f70824ce582bfe041e18e44fd)
+        ;
+
+        
+    
+    
+            var marker_348dfd2247484380ac19a5e8a7a89886 = L.marker(
+                [41.440000000000005, 123.3],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_13f6d4dd40604452b66a923ddc7e7cf3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e41\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_348dfd2247484380ac19a5e8a7a89886.setIcon(div_icon_13f6d4dd40604452b66a923ddc7e7cf3);
+        
+    
+            var circle_33230e96f15f4193a09574f2ecfb864c = L.circle(
+                [37.6, 112.2],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17776.740307447068, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_d06d80adb1c34628b75788ef96b2c559 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_431deba82a1a4c6eaf6e9fe1747f8eee = $(`<div id="html_431deba82a1a4c6eaf6e9fe1747f8eee" style="width: 100.0%; height: 100.0%;">Shanxi:  35 infected,   0 deaths</div>`)[0];
+            popup_d06d80adb1c34628b75788ef96b2c559.setContent(html_431deba82a1a4c6eaf6e9fe1747f8eee);
+        
+
+        circle_33230e96f15f4193a09574f2ecfb864c.bindPopup(popup_d06d80adb1c34628b75788ef96b2c559)
+        ;
+
+        
+    
+    
+            var marker_0b46d4fe6918465fa900d69990f80581 = L.marker(
+                [37.34, 112.2],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_b6b2fada10ab468b94a1953f314bd979 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e35\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_0b46d4fe6918465fa900d69990f80581.setIcon(div_icon_b6b2fada10ab468b94a1953f314bd979);
+        
+    
+            var circle_c1888e37e6a64489bc449753feb396b9 = L.circle(
+                [39.3, 117.4],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17005.986908310777, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_42bfdf4701a041b39029fe65c12fdd48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4f39da6f4c64f519c164f4f42e1d3b7 = $(`<div id="html_b4f39da6f4c64f519c164f4f42e1d3b7" style="width: 100.0%; height: 100.0%;">Tianjin:  30 infected,   0 deaths</div>`)[0];
+            popup_42bfdf4701a041b39029fe65c12fdd48.setContent(html_b4f39da6f4c64f519c164f4f42e1d3b7);
+        
+
+        circle_c1888e37e6a64489bc449753feb396b9.bindPopup(popup_42bfdf4701a041b39029fe65c12fdd48)
+        ;
+
+        
+    
+    
+            var marker_5934c7a19d19464e8d91e22d5ffb662f = L.marker(
+                [39.04, 117.4],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_e4fd1ff664814197930f64e3a6f81e60 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e30\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_5934c7a19d19464e8d91e22d5ffb662f.setIcon(div_icon_e4fd1ff664814197930f64e3a6f81e60);
+        
+    
+            var circle_fa8bc3be96734019accaca220e48a89c = L.circle(
+                [35.4, 103.9],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16290.48269010741, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_caf4b10364684d7bb49fe064a87ce314 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7672811278049c783e7b0235f34246c = $(`<div id="html_f7672811278049c783e7b0235f34246c" style="width: 100.0%; height: 100.0%;">Gansu:  26 infected,   0 deaths</div>`)[0];
+            popup_caf4b10364684d7bb49fe064a87ce314.setContent(html_f7672811278049c783e7b0235f34246c);
+        
+
+        circle_fa8bc3be96734019accaca220e48a89c.bindPopup(popup_caf4b10364684d7bb49fe064a87ce314)
+        ;
+
+        
+    
+    
+            var marker_238387a3e66841fbbfb3313d6410f1b3 = L.marker(
+                [35.14, 103.9],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_77944594058b49e697eac9ceb4ed1c58 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e26\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_238387a3e66841fbbfb3313d6410f1b3.setIcon(div_icon_77944594058b49e697eac9ceb4ed1c58);
+        
+    
+            var circle_7a016b99c119477f81d278158884279f = L.circle(
+                [41.6, 113.1],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14451.858789480822, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_088657d9611c4aef9294df36c64f43d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46cbcf99c8384785acf57c2a108c1a6e = $(`<div id="html_46cbcf99c8384785acf57c2a108c1a6e" style="width: 100.0%; height: 100.0%;">Inner Mongolia:  18 infected,   0 deaths</div>`)[0];
+            popup_088657d9611c4aef9294df36c64f43d8.setContent(html_46cbcf99c8384785acf57c2a108c1a6e);
+        
+
+        circle_7a016b99c119477f81d278158884279f.bindPopup(popup_088657d9611c4aef9294df36c64f43d8)
+        ;
+
+        
+    
+    
+            var marker_25b1e5b7b4e8401e9ec1abbd82381436 = L.marker(
+                [41.34, 113.1],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_778d9e9a40e6466d828c2e42ff8195b8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e18\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_25b1e5b7b4e8401e9ec1abbd82381436.setIcon(div_icon_778d9e9a40e6466d828c2e42ff8195b8);
+        
+    
+            var circle_b87bcc30866d4c689adc9ca83e7c39d0 = L.circle(
+                [37.4, 105.9],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14166.06672028108, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_9cf487f58f8e40e79e6c496e54b86b4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51b3c04f9567484e918c79470f087c86 = $(`<div id="html_51b3c04f9567484e918c79470f087c86" style="width: 100.0%; height: 100.0%;">Ningxia:  17 infected,   0 deaths</div>`)[0];
+            popup_9cf487f58f8e40e79e6c496e54b86b4e.setContent(html_51b3c04f9567484e918c79470f087c86);
+        
+
+        circle_b87bcc30866d4c689adc9ca83e7c39d0.bindPopup(popup_9cf487f58f8e40e79e6c496e54b86b4e)
+        ;
+
+        
+    
+    
+            var marker_3e6a7222f2e7411783fbcb40fa7b4b8e = L.marker(
+                [37.14, 105.9],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_8ddfbfe263074a5985d202ad49e1b5fa = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e17\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_3e6a7222f2e7411783fbcb40fa7b4b8e.setIcon(div_icon_8ddfbfe263074a5985d202ad49e1b5fa);
+        
+    
+            var circle_c45b8c8219b24202bc3f492f89508fb5 = L.circle(
+                [43.8, 125.5],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13195.286648076291, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_f44a774d02684e55bd3623a56db538f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_423cd23e226740fd80057cce4880590f = $(`<div id="html_423cd23e226740fd80057cce4880590f" style="width: 100.0%; height: 100.0%;">Jilin:  14 infected,   0 deaths</div>`)[0];
+            popup_f44a774d02684e55bd3623a56db538f2.setContent(html_423cd23e226740fd80057cce4880590f);
+        
+
+        circle_c45b8c8219b24202bc3f492f89508fb5.bindPopup(popup_f44a774d02684e55bd3623a56db538f2)
+        ;
+
+        
+    
+    
+            var marker_0b49f29c3c4e4acc86fe3b88ae9a7d70 = L.marker(
+                [43.54, 125.5],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_99276e60df3247d5a5eac388a324311d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e14\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_0b49f29c3c4e4acc86fe3b88ae9a7d70.setIcon(div_icon_99276e60df3247d5a5eac388a324311d);
+        
+    
+            var circle_12f24d8671ea4501879b9245f8f9c7c1 = L.circle(
+                [43.5, 87.5],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13195.286648076291, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_163d69949e6b42f5b9da400182405d87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8849694e3d7f4a5b84b051fdc1f97ea3 = $(`<div id="html_8849694e3d7f4a5b84b051fdc1f97ea3" style="width: 100.0%; height: 100.0%;">Xinjiang:  14 infected,   0 deaths</div>`)[0];
+            popup_163d69949e6b42f5b9da400182405d87.setContent(html_8849694e3d7f4a5b84b051fdc1f97ea3);
+        
+
+        circle_12f24d8671ea4501879b9245f8f9c7c1.bindPopup(popup_163d69949e6b42f5b9da400182405d87)
+        ;
+
+        
+    
+    
+            var marker_7682399e8c0d476cb4620d5fb41d2bf5 = L.marker(
+                [43.24, 87.5],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_b431b2a4e6164cc499fee214e5ed6c50 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e14\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_7682399e8c0d476cb4620d5fb41d2bf5.setIcon(div_icon_b431b2a4e6164cc499fee214e5ed6c50);
+        
+    
+            var circle_1eb2cc298b314b408cc113bf7c26c6ce = L.circle(
+                [26.7, 107.1],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12424.533248940003, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_65ce956c4aed47cb87391736f5e1a5ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b644f35fea04ef495aab191778aefe7 = $(`<div id="html_7b644f35fea04ef495aab191778aefe7" style="width: 100.0%; height: 100.0%;">Guizhou:  12 infected,   0 deaths</div>`)[0];
+            popup_65ce956c4aed47cb87391736f5e1a5ff.setContent(html_7b644f35fea04ef495aab191778aefe7);
+        
+
+        circle_1eb2cc298b314b408cc113bf7c26c6ce.bindPopup(popup_65ce956c4aed47cb87391736f5e1a5ff)
+        ;
+
+        
+    
+    
+            var marker_16acfa74cac842899b0e598d0dac5649 = L.marker(
+                [26.439999999999998, 107.1],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_7b42b956006943b7800273f53444df4f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e12\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_16acfa74cac842899b0e598d0dac5649.setIcon(div_icon_7b42b956006943b7800273f53444df4f);
+        
+    
+            var circle_5555fc7b7f9d4a03a410413fc3e10a2a = L.circle(
+                [22.3, 114.1],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11512.925464970229, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_f91f9ff6b90a4359a3b8a76b20fa6b66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a9dcd9cdb7747f198cc68d5cf228edc = $(`<div id="html_4a9dcd9cdb7747f198cc68d5cf228edc" style="width: 100.0%; height: 100.0%;">Hong Kong:  10 infected,   0 deaths</div>`)[0];
+            popup_f91f9ff6b90a4359a3b8a76b20fa6b66.setContent(html_4a9dcd9cdb7747f198cc68d5cf228edc);
+        
+
+        circle_5555fc7b7f9d4a03a410413fc3e10a2a.bindPopup(popup_f91f9ff6b90a4359a3b8a76b20fa6b66)
+        ;
+
+        
+    
+    
+            var marker_ca2d32561e034085a41aec9cc4d5bdbc = L.marker(
+                [22.04, 114.1],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_155d232c1cff4bf8993ba59b1c19ad07 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e10\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_ca2d32561e034085a41aec9cc4d5bdbc.setIcon(div_icon_155d232c1cff4bf8993ba59b1c19ad07);
+        
+    
+            var circle_98b9d5a6c58a4940929fa1f363642ac4 = L.circle(
+                [23.7, 120.9],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10986.122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_32dc1327dc01443b83369273f41542e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cfdd81ed95e46bc8fe5a05d13a14e5e = $(`<div id="html_1cfdd81ed95e46bc8fe5a05d13a14e5e" style="width: 100.0%; height: 100.0%;">Taiwan:  9 infected,   0 deaths</div>`)[0];
+            popup_32dc1327dc01443b83369273f41542e7.setContent(html_1cfdd81ed95e46bc8fe5a05d13a14e5e);
+        
+
+        circle_98b9d5a6c58a4940929fa1f363642ac4.bindPopup(popup_32dc1327dc01443b83369273f41542e7)
+        ;
+
+        
+    
+    
+            var marker_52b80ab60b6548ea86658059db7e6dd7 = L.marker(
+                [23.439999999999998, 120.9],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_8cf953043a0c4905bc451165d2e9572f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e9\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_52b80ab60b6548ea86658059db7e6dd7.setIcon(div_icon_8cf953043a0c4905bc451165d2e9572f);
+        
+    
+            var circle_c8806c74fb9548eb8df7a6b302e6a4a1 = L.circle(
+                [22.1, 113.5],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9729.550745276567, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_58e39e5c2d9845d6a335a95502a22698 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ff2e7c5a0a247d88a6b901ea6aec4c6 = $(`<div id="html_2ff2e7c5a0a247d88a6b901ea6aec4c6" style="width: 100.0%; height: 100.0%;">Macau:  7 infected,   0 deaths</div>`)[0];
+            popup_58e39e5c2d9845d6a335a95502a22698.setContent(html_2ff2e7c5a0a247d88a6b901ea6aec4c6);
+        
+
+        circle_c8806c74fb9548eb8df7a6b302e6a4a1.bindPopup(popup_58e39e5c2d9845d6a335a95502a22698)
+        ;
+
+        
+    
+    
+            var marker_646a4e056acf444db860706cd56fb8ea = L.marker(
+                [21.84, 113.5],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_388d5c20320d4fceb74ee71348f9386e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e7\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_646a4e056acf444db860706cd56fb8ea.setIcon(div_icon_388d5c20320d4fceb74ee71348f9386e);
+        
+    
+            var circle_e2ef22d677cd43a9ad6d12d9f20bbe86 = L.circle(
+                [35.6, 96.5],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8958.797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_385f7003cba244eba897b904600eb8cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7dd840dadcb4ce587c7fe82d827b383 = $(`<div id="html_e7dd840dadcb4ce587c7fe82d827b383" style="width: 100.0%; height: 100.0%;">Qinghai:  6 infected,   0 deaths</div>`)[0];
+            popup_385f7003cba244eba897b904600eb8cf.setContent(html_e7dd840dadcb4ce587c7fe82d827b383);
+        
+
+        circle_e2ef22d677cd43a9ad6d12d9f20bbe86.bindPopup(popup_385f7003cba244eba897b904600eb8cf)
+        ;
+
+        
+    
+    
+            var marker_4631384f26144b738eb4ccc9f5f3fc71 = L.marker(
+                [35.34, 96.5],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_ec44f8ed39b647118be05f8800b44d56 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e6\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_4631384f26144b738eb4ccc9f5f3fc71.setIcon(div_icon_ec44f8ed39b647118be05f8800b44d56);
+        
+    
+            var circle_ab618f9eca87404692585fc20a2eb3b1 = L.circle(
+                [32.3, 86.1],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+        var popup_477f5282856f4a17b7e27c96af105722 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e50fc2b0c824b4ebf1ce4253fcfa651 = $(`<div id="html_8e50fc2b0c824b4ebf1ce4253fcfa651" style="width: 100.0%; height: 100.0%;">Tibet:  1 infected,   0 deaths</div>`)[0];
+            popup_477f5282856f4a17b7e27c96af105722.setContent(html_8e50fc2b0c824b4ebf1ce4253fcfa651);
+        
+
+        circle_ab618f9eca87404692585fc20a2eb3b1.bindPopup(popup_477f5282856f4a17b7e27c96af105722)
+        ;
+
+        
+    
+    
+            var marker_efe83e1018c1486b8fb18277600a8572 = L.marker(
+                [32.04, 86.1],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_bf7960c539bc4255834c34b9801263ed = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"color:crimson\"\u003e1\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_efe83e1018c1486b8fb18277600a8572.setIcon(div_icon_bf7960c539bc4255834c34b9801263ed);
+        
+    
+            var marker_a28769fe9b1e4e2ca0664741dc3b14e2 = L.marker(
+                [47.0, 87.0],
+                {}
+            ).addTo(map_2bad571cc54f48768439e776aefd464d);
+        
+    
+            var div_icon_572e95442a194260a086152348b415cc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 24px\"\u003e\u003cdiv style=\"color:white\"\u003enCoV-2019 coronavirus in China \n Total confirmed cases: 7828\u003c/div\u003e\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [400, 350]});
+            marker_a28769fe9b1e4e2ca0664741dc3b14e2.setIcon(div_icon_572e95442a194260a086152348b415cc);
+        
+</script>
