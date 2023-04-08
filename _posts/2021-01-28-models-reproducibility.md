@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On the replicability problem in machine learning research"
-date: 2021-01-30
+date: 2022-01-30
 ---
 
 This note is inspired by the Denny’s Britz’s post [“AI Research, Replicability and Incentives”](https://dennybritz.com/blog/ai-replication-incentives/) where he analyzes reasons why some promising SOTA results from academia are sadly often hard to reproduce with the same performance as claimed in the corresponding **peer-reviewed** papers. Here I want to condense the ideas of Denny and add some of my personal thoughts.
